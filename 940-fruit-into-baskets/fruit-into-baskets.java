@@ -12,10 +12,9 @@ class Solution {
                     map.remove(fruits[l]);
                 }
                 l++;
-                map.put(fruits[r], map.getOrDefault(fruits[r], 0) + 1);
-            }else{
-                map.put(fruits[r], map.getOrDefault(fruits[r], 0) + 1);
+               
             }
+            map.put(fruits[r], map.getOrDefault(fruits[r], 0) + 1);
             if(map.size()<=2)
                 w=Math.max(w, r-l+1);
         }
